@@ -1,0 +1,105 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/background.png" type="Texture" id=1]
+[ext_resource path="res://src/InterfaceElements/Title.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/MeonkPlanks_theme.tres" type="Theme" id=3]
+[ext_resource path="res://src/InterfaceElements/QuitButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/InterfaceElements/ChangeSceneButton.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/Screens/EndScreen.gd" type="Script" id=6]
+[ext_resource path="res://assets/OnionRocks_font.tres" type="DynamicFont" id=7]
+
+[node name="EndScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 3 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.51978
+margin_right = 2.51978
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" parent="." instance=ExtResource( 2 )]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -275.301
+margin_bottom = -231.301
+text = "Congrats you have finished the game."
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -175.0
+margin_top = -188.629
+margin_right = 175.0
+margin_bottom = -133.629
+text = "Your final score is:
+Your deaths: "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 161.743
+margin_top = -208.68
+margin_right = 201.743
+margin_bottom = -147.68
+custom_fonts/font = ExtResource( 7 )
+text = "???"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Deaths" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 108.289
+margin_top = -167.698
+margin_right = 148.289
+margin_bottom = -106.698
+custom_fonts/font = ExtResource( 7 )
+text = "???"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -244.0
+margin_top = -79.5
+margin_right = 244.0
+margin_bottom = 79.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayButton" parent="Menu" instance=ExtResource( 5 )]
+text = "Play Again"
+next_scene_path = "res://src/Screens/MainScreen.tscn"
+
+[node name="QuitButton" parent="Menu" instance=ExtResource( 4 )]
+margin_top = 81.0
+margin_bottom = 159.0

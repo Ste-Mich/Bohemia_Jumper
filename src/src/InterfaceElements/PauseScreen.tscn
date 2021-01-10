@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://src/InterfaceElements/ChangeSceneButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/InterfaceElements/Title.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/InterfaceElements/QuitButton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/background.png" type="Texture" id=6]
+[ext_resource path="res://assets/meonk_planks_ui_theme.tres" type="Theme" id=7]
+[ext_resource path="res://src/InterfaceElements/QuitButton.gd" type="Script" id=8]
+
+[node name="PauseScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.592531
+margin_right = -0.592529
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" parent="." instance=ExtResource( 3 )]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -201.962
+margin_bottom = -157.962
+text = "The Game that took my virginity"
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -241.0
+margin_top = -96.0
+margin_right = 247.0
+margin_bottom = 62.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RetryButton" parent="Menu" instance=ExtResource( 2 )]
+margin_bottom = 50.0
+text = "Retry"
+next_scene_path = "res://src/Levels/LevelTemplate.tscn"
+
+[node name="MainMenuButton" parent="Menu" instance=ExtResource( 2 )]
+margin_top = 54.0
+margin_bottom = 104.0
+text = "Main Menu"
+next_scene_path = "res://src/Levels/LevelTemplate.tscn"
+
+[node name="QuitButton" parent="Menu" instance=ExtResource( 4 )]
+margin_top = 108.0
+margin_bottom = 158.0
+script = ExtResource( 8 )
