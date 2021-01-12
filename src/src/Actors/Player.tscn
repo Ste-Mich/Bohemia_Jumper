@@ -4,16 +4,16 @@
 [ext_resource path="res://src/Actors/Player.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 43, 42 )
+extents = Vector2( 19.211, 26.0038 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 48.5589, 44.1394 )
+extents = Vector2( 21.8768, 27.6875 )
 
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 0, -48 )
 collision_mask = 8
 script = ExtResource( 2 )
-speed = Vector2( 800, 1000 )
+speed = Vector2( 500, 700 )
 gravity = 1550.0
 
 [node name="player" type="Sprite" parent="."]
@@ -26,7 +26,6 @@ shape = SubResource( 1 )
 [node name="Camera2D" type="Camera2D" parent="."]
 rotating = true
 current = true
-zoom = Vector2( 1.7, 1.7 )
 limit_left = 0
 limit_bottom = 0
 drag_margin_h_enabled = true

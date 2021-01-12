@@ -74,6 +74,7 @@ margin_right = 468.0
 margin_top = 81.0
 margin_right = 468.0
 margin_bottom = 158.0
+text = "Main Menu"
 next_scene_path = "res://src/Screens/MainScreen.tscn"
 
 [node name="QuitButton" parent="PauseMenu/VBoxContainer" instance=ExtResource( 5 )]
