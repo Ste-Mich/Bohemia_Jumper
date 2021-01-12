@@ -34,7 +34,8 @@ anchor_top = 0.5
 anchor_bottom = 0.5
 margin_top = -275.301
 margin_bottom = -231.301
-text = "Congrats you have finished the game."
+text = "This is it. This is our sacred place.
+Congrats you have finished the game."
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5
