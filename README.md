@@ -14,7 +14,7 @@ The tutorial itself is split into 3 parts, with overall length being like 5 hour
 The textures are different from the ones in the tutorial.
 
 Godot also really impressed me. It's a great program.
-And The fact, it's open-source makes it even greater.
+And the fact, that it's open-source makes it even greater.
 
 It falls under the MIT license from Godot (duh),
 which you can find here: https://godotengine.org/license
@@ -22,6 +22,6 @@ and creative commons from GDQuest (CC BY 4.0 - https://creativecommons.org/licen
 You can do anything you want with this code, I don't care.
 (of course, as long as it doesn't violate the licenses)
 
-again A big thanks to both GDQuest and the Godot devs
+Again a big thanks to both GDQuest and the Godot devs.
 	- GDQuest (https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ)
 	- Godot (https://godotengine.org/)
